@@ -56,6 +56,7 @@ Utility Functions:
 **CSS module**
 notice:'e','f' in the below function parameters refer to the value query selector. All 'e' and 'to' must have a valid queryselector value. Same in some HTML functions.
 'g' and 'h' are the values that are given to the css function.
+(they are named so because i have a habbit of naming things... bad) please co-operate :)
 one example :- 
 
 filter('h1','blur(2px)')
