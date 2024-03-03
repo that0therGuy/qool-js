@@ -1,0 +1,17 @@
+{
+    "name": "qool.js",
+    "version": "1.0.13",
+    "description": "a pkg for people who live in a js file",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "dom",
+        "better js",
+        "front end",
+        "styling"
+    ],
+    "author": "protato",
+    "license": "ISC"
+}
