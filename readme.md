@@ -56,101 +56,118 @@ Utility Functions:
 **CSS module**
 notice:'e','f' in the below function parameters refer to the value query selector. All 'e' and 'to' must have a valid queryselector value. Same in some HTML functions.
 'g' and 'h' are the values that are given to the css function.
-(they are named so because i have a habbit of naming things... bad) please co-operate :)
 one example :- 
 
 filter('h1','blur(2px)')
 
-    bg({to, blend, pos, size, img, attach, color, clip, filter}): Sets various background properties such as color, image, blend mode, position, size, attachment, clip, and filter.
+PS: most of these functions have similiar names to their css property counnterparts, except a few, which will be highlighted below.
 
-    clipPath(e, g): Sets the clipping path for the specified element.
+    bg({to,blend,pos,size,img,attach,color,clip,filter,origin})
 
-    pointerEvents(e, g): Sets the pointer events property for the specified element.
+    clipPath(e,g)
 
-    filter(e, g): Applies filter effects to the specified element.
+    pointerEvents(e,g)
 
+    filter(e,g)
 
-    quotes(e, g): Sets quotation marks for the specified element.
+    quotes(e,g)
 
-    clip(e, g): Clips the content of the specified element.
+    clip(e,g)
 
-    color(e, g): Sets the color of the specified element.
+    color({to,color,caretColor})
 
-    opacity(e, g): Sets the opacity level of the specified element.
+    opacity(e,g)
 
-    lineHeight(e, g): Sets the line height of the specified element.
+    lineHeight(e,g)
 
-    listStyle(e, g): Sets the list style for the specified element.
+    listStyle(e,g)
 
-    all(e, g): Sets all CSS properties for the specified element.
+    all(e,g)
 
-    imageRender(e, g): Sets the image rendering for the specified element.
+    imageRender(e,g)
 
-    perspective(e, g): Sets the perspective property for the specified element.
+    perspective(e,g)
 
-    willChange(e, g): Sets the will-change property for the specified element.
+    willChange(e,g)
 
-    shapeOutside(e, g): Sets the shape outside for the specified element.
+    shapeOutside(e,g)
 
-    BoxEffect(e, g): Sets the box shadow for the specified element.
+    BoxEffect(e,g) -- same as 'box-shadow' in css
 
-    bgRepeat(e, g): Sets the background repeat property for the specified element.
+    bgRepeat(e,g)
 
-    display(e, g): Sets the display property for the specified element.
+    display(e,g)
 
-    pos(e, g): Sets the position property for the specified element.
+    pos(e,g) -- same as 'property' in css
 
-    rotate(e, g): Rotates the specified element.
+    rotate(e,g)
 
-    scale(e, g): Scales the specified element.
+    scale(e,g)
 
-    boxSize(e, g): Sets the box sizing property for the specified element
-    
-    translate(e, g): Translates the specified element.
+    boxSize(e,g) -- same as 'box-sizing' in css
 
-    aspectRatio(e, g): Sets the aspect ratio property for the specified element.
+    translate(e,g)
 
-    zIndex(e, g): Sets the z-index property for the specified element.
+    aspectRatio(e,g)
 
-    visibility(e, g): Sets the visibility property for the specified element.
+    zIndex(e,g)
 
-    transform(e, g): Sets the transform property for the specified element.
+    visibility(e,g)
 
-    contain(e, g): Sets the contain property for the specified element.
+    transform(e,g)
 
-    transition(e, g): Sets the transition property for the specified element.
+    contain(e,g)
 
-    float(e, g): Sets the float property for the specified element.
+    listStyle(e,g)
 
-    centerFlex(e, h): Centers the specified element using flexbox and sets its height.
+    transition(e,g)
 
-    overflow({to, x, y, overflow}): Sets the overflow properties for the specified element.
+    animation(e,g)
 
-    size({to, height, width}): Sets the height and width for the specified element.
+    float(e,g)
 
-    cursor({to, type}): Sets the cursor type for the specified element.
+    centerFlex(e,h)
 
-    userSelect(to, type): Sets the user select property for the specified element.
+    overflow({to,x,y,overflow})
 
-    writingMode(to, type): Sets the writing mode property for the specified element.
+    positionPositioning({to,top,bottom,right,left}) -- same as 'top,bottom,left,right' in css
 
-    font({to, family, weight, size, style, color}): Sets the font properties for the specified element.
+    pp({to,top,bottom,right,left}) -- same as 'top,bottom,left,right' in css
 
-    spacing({to, margin, padding}): Sets the margin and padding for the specified element.
+    size({to,height,width,maxHeight,maxWidth}) -- has all the sizing properties (except box sizing which has its own function)
 
-    border({to, size, style, color, radius}): Sets the border properties for the specified element.
+    cursor(to,type)
 
-    word({wordBreak, to, wordSpacing, letterSpacing, whiteSpacing}): Sets word-related properties for the specified element.
+    mask({to,maskImage,maskMode})
 
-    text({to, align, decoration, shadow, orientation, transform, justify, wrap}): Sets text-related properties for the specified element.
+    counter({to,increment,reset,content})
 
-    flex({to, display='flex', justifyContent, placeContent, alignItems, direction, flex, order, wrap}): Sets flexbox properties for the specified element.
+    textGradient({to,color1,color2}) -- applies text gradient
 
-    grid({to, display='grid', gridTemplate, gap, grid, justifyContent, placeContent, alignContent, placeItems}): Sets grid properties for the specified element.
+    userSelect(to,type)
 
-    scroll({to, behavior, margin, padding, snapAlign, snapStop, snapType, timeline}): Sets scroll-related properties for the specified element.
+    writingMode(to,type)
 
-    scrollbar({to, color, gutter, width}): Sets scrollbar properties for the specified element.
-    appearance(e, g): Sets the appearance property for the specified element.
+    outline(to,type)
 
-    + many more (im tired writing)
+    font({to,family,weight,size,style,color})
+
+    spacing({to,margin,padding}) -- same as 'margin,padding' in css
+
+    border({to,size,style,color,radius})
+
+    word({wordBreak,to,wordSpacing,letterSpacing,whiteSpacing}) -- same as 'wordBreak,to,wordSpacing,letterSpacing,whiteSpacing' in css
+
+    text({to,align,decoration,shadow,orientation,transform,justify,wrap,tabSize})
+
+    flex({to,display='flex',justifyContent,placeContent,alignItems,direction,flex,order,wrap})
+
+    grid({to,display='grid',gridTemplate,gap,grid,justifyContent,placeContent,alignContent,placeItems})
+
+    scroll({to,behavior,margin,padding,snapAlign,snapStop,snapType,timeline})
+
+    table({to,collapse,spacing,captionSide,layout,verticalAlign,emptyCells})
+
+    scrollbar({to,color,gutter,width})
+
+    appearance(e,g)
