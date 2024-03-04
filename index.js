@@ -194,6 +194,19 @@ export class CSS{
         document.querySelector(to).style.overflowY=y;
         document.querySelector(to).style.overflow=overflow;
     }
+    static positionPositioning({to,top,bottom,right,left}){
+        document.querySelector(to).style.bottom=bottom;
+        document.querySelector(to).style.top=top;
+        document.querySelector(to).style.right=right;
+        document.querySelector(to).style.left=left;
+    }
+    static pp({to,top,bottom,right,left}){               //same as positionPositioning
+        document.querySelector(to).style.bottom=bottom;
+        document.querySelector(to).style.top=top;
+        document.querySelector(to).style.right=right;
+        document.querySelector(to).style.left=left;
+    }
+
     
     static size({to,height,width,maxHeight,maxWidth}){
         document.querySelector(to).style.height=height;
@@ -214,6 +227,11 @@ export class CSS{
         document.querySelector(to).style.counterReset=reset;
         document.querySelector(to).style.counterIncrement=increment;
         document.querySelector(to).style.content=content;
+    }
+    static textGradient({to,color1,color2,extra='transparent'}){
+        document.querySelector(to).style.background = `-webkit-linear-gradient(${color1}, ${color2})`;
+        document.querySelector(to).style.webkitBackgroundClip = 'text';
+        document.querySelector(to).style.webkitTextFillColor = extra;
     }
     static userSelect(to,type){
         document.querySelector(to).style.userSelect=type;
