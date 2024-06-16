@@ -1,7 +1,7 @@
 ***QOOL.js Documentation***
 
-QOOL.js is a JavaScript library designed for people who are addicted to their javascript file. QOOL.js provides a better DOM manipulation experience than vanilla HTML/css/js. This documentation provides a comprehensive guide to all the built-in functions available in QOOL.js, categorized by their respective modules.
-this is a work in progress btw
+Qool.js aims at improving the way we style our websites. It provides a better DOM manipulation experience than vanilla HTML/css/js. This documentation provides a comprehensive guide to all the built-in functions available in QOOL.js, categorized by their respective modules.
+
 
 **HTML Module**
 DOM Selection:
